@@ -16,8 +16,8 @@
 @font-face {
   font-family: RemusVariableVF;
   src:
-    url(/fonts/RemusVariableVF.Cr3_a1cP.woff2) format("woff2"),
-    url(/fonts/RemusVariableVF.Coq6sNE4.woff) format("woff");
+    url(./fonts/RemusVariableVF.Cr3_a1cP.woff2) format("woff2"),
+    url(./fonts/RemusVariableVF.Coq6sNE4.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -28,8 +28,8 @@
 @font-face {
   font-family: andale-mono;
   src:
-    url(/fonts/AndaleMono.B_ce-kjs.woff2) format("woff2"),
-    url(/fonts/AndaleMono.DTdWX96f.woff) format("woff");
+    url(./fonts/AndaleMono.B_ce-kjs.woff2) format("woff2"),
+    url(./fonts/AndaleMono.DTdWX96f.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,8 @@
 @font-face {
   font-family: comic-mono;
   src:
-    url(/fonts/ComicMono-Bold.KJUb2rOM.woff2) format("woff2"),
-    url(/fonts/ComicMono-Bold.DS90UyJz.woff) format("woff");
+    url(./fonts/ComicMono-Bold.KJUb2rOM.woff2) format("woff2"),
+    url(./fonts/ComicMono-Bold.DS90UyJz.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

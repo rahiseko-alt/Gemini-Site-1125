@@ -7,6 +7,8 @@ import { useEventBus } from './eventBus'
 
 const ROMO_Z = -3
 
+const BASE_URL = import.meta.env.BASE_URL || '/'
+
 class RomoShape {
   constructor() {
     this.root = new THREE.Group()
@@ -19,7 +21,7 @@ class RomoShape {
     if (this.isLoading) return
     this.isLoading = true
     new GLTFLoader().load(
-      '/glbs/test.glb',
+      `${BASE_URL}glbs/test.glb`,
       gltf => {
         this.model = gltf.scene.children[0]
         this.root.add(this.model)
@@ -68,14 +70,11 @@ const SHAPE_Z = -3
 const textureLoader = new THREE.TextureLoader()
 
 const LOCAL_IMAGE_MAP = {
-  'https://www.datocms-assets.com/161518/1757799426-ra.jpg': '/images/ra.jpg',
-  'https://www.datocms-assets.com/161518/1757799569-lets-talk.jpg': '/images/lets-talk.jpg',
-  'https://www.datocms-assets.com/161518/1759807008-lets-talk-mobile.jpg':
-    '/images/lets-talk-mobile.jpg',
-  'https://www.datocms-assets.com/161518/1757799559-select-projects.jpg':
-    '/images/select-projects.jpg',
-  'https://www.datocms-assets.com/161518/1759807004-select-projects-sml.jpg':
-    '/images/select-projects-sml.jpg'
+  'https://www.datocms-assets.com/161518/1757799426-ra.jpg': `${BASE_URL}images/ra.jpg`,
+  'https://www.datocms-assets.com/161518/1757799569-lets-talk.jpg': `${BASE_URL}images/lets-talk.jpg`,
+  'https://www.datocms-assets.com/161518/1759807008-lets-talk-mobile.jpg': `${BASE_URL}images/lets-talk-mobile.jpg`,
+  'https://www.datocms-assets.com/161518/1757799559-select-projects.jpg': `${BASE_URL}images/select-projects.jpg`,
+  'https://www.datocms-assets.com/161518/1759807004-select-projects-sml.jpg': `${BASE_URL}images/select-projects-sml.jpg`
 }
 
 class TitleShape {

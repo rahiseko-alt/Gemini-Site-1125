@@ -19,7 +19,7 @@ gsap.ticker.add(time => {
 })
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', component: IndexPage },
     { path: '/:pathMatch(.*)*', component: ErrorPage }

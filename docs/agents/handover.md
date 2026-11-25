@@ -8,16 +8,17 @@
 
 ---
 
-## 2026-11-26 romainavalle.dev の完全再現を実装
+## 2026-11-26 romainavalle.dev の完全再現を実装・公開
 
 **決めたこと**
 
 - 利用者の指示により質問工程を飛ばし、`https://romainavalle.dev/` の配信コードと全素材（フォント・3Dモデル・画像・データ）を解析して Vue 3・Pinia・Three.js・GSAP・Lenis・Tailwind CSS v4 で完全再現した
 - WebGL の ASCII 描画・10種類の楽器シンセサイザー・文字落下演出・白黒の画面切り替え・39件の実績一覧・404画面のブロック崩しゲームまで全て動作する状態で構築し、`README.md` も書き換えた
+- GitHub Pages（`https://rahiseko-alt.github.io/Gemini-Site-1125/`）に公開（デプロイ）した
 
 **次にやること**
 
-- 画面を動かして見た目と動き・音を確認する（変更したい箇所があれば指示する）
+- 公開URL（`https://rahiseko-alt.github.io/Gemini-Site-1125/`）を開いて見た目と動き・音を確認する（変更したい箇所があれば指示する）
 
 **未解決の問題**
 
